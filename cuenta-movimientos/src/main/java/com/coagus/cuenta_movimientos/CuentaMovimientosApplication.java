@@ -1,15 +1,17 @@
-package com.coagus.cliente_persona;
+package com.coagus.cuenta_movimientos;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-public class ClientePersonaApplication {
+@EnableFeignClients
+public class CuentaMovimientosApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ClientePersonaApplication.class, args);
+		SpringApplication.run(CuentaMovimientosApplication.class, args);
 	}
 
 }

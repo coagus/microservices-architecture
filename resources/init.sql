@@ -1,0 +1,2 @@
+CREATE DATABASE IF NOT EXISTS cliente_persona;
+CREATE DATABASE IF NOT EXISTS cuenta_movimientos;

@@ -1,10 +1,10 @@
-package com.coagus.cliente_persona;
+package com.coagus.discovery_service;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ClientePersonaApplicationTests {
+class DiscoveryServiceApplicationTests {
 
 	@Test
 	void contextLoads() {
