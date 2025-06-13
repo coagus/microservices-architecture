@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="microservicios.MicroservicesTest" time="2.36" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="24"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/coagus/Repositories/github/microservices-architecture/karatest/target/test-classes:/Users/coagus/Repositories/github/microservices-architecture/karatest/target/classes:/Users/coagus/.m2/repository/io/karatelabs/karate-junit5/1.5.0/karate-junit5-1.5.0.jar:/Users/coagus/.m2/repository/io/karatelabs/karate-core/1.5.0/karate-core-1.5.0.jar:/Users/coagus/.m2/repository/org/graalvm/js/js-scriptengine/24.0.0/js-scriptengine-24.0.0.jar:/Users/coagus/.m2/repository/org/graalvm/polyglot/polyglot/24.0.0/polyglot-24.0.0.jar:/Users/coagus/.m2/repository/org/graalvm/sdk/collections/24.0.0/collections-24.0.0.jar:/Users/coagus/.m2/repository/org/graalvm/sdk/nativeimage/24.0.0/nativeimage-24.0.0.jar:/Users/coagus/.m2/repository/org/graalvm/sdk/word/24.0.0/word-24.0.0.jar:/Users/coagus/.m2/repository/org/graalvm/js/js-language/24.0.0/js-language-24.0.0.jar:/Users/coagus/.m2/repository/org/graalvm/regex/regex/24.0.0/regex-24.0.0.jar:/Users/coagus/.m2/repository/org/graalvm/truffle/truffle-api/24.0.0/truffle-api-24.0.0.jar:/Users/coagus/.m2/repository/org/graalvm/shadowed/icu4j/24.0.0/icu4j-24.0.0.jar:/Users/coagus/.m2/repository/org/thymeleaf/thymeleaf/3.1.2.RELEASE/thymeleaf-3.1.2.RELEASE.jar:/Users/coagus/.m2/repository/ognl/ognl/3.3.4/ognl-3.3.4.jar:/Users/coagus/.m2/repository/org/javassist/javassist/3.29.0-GA/javassist-3.29.0-GA.jar:/Users/coagus/.m2/repository/org/attoparser/attoparser/2.0.7.RELEASE/attoparser-2.0.7.RELEASE.jar:/Users/coagus/.m2/repository/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar:/Users/coagus/.m2/repository/com/linecorp/armeria/armeria/1.29.2/armeria-1.29.2.jar:/Users/coagus/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.1/jackson-core-2.17.1.jar:/Users/coagus/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.1/jackson-annotations-2.17.1.jar:/Users/coagus/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.1/jackson-databind-2.17.1.jar:/Users/coagus/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.17.1/jackson-datatype-jdk8-2.17.1.jar:/Users/coagus/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.17.1/jackson-datatype-jsr310-2.17.1.jar:/Users/coagus/.m2/repository/io/micrometer/micrometer-core/1.13.0/micrometer-core-1.13.0.jar:/Users/coagus/.m2/repository/io/micrometer/micrometer-commons/1.13.0/micrometer-commons-1.13.0.jar:/Users/coagus/.m2/repository/io/micrometer/micrometer-observation/1.13.0/micrometer-observation-1.13.0.jar:/Users/coagus/.m2/repository/org/hdrhistogram/HdrHistogram/2.2.1/HdrHistogram-2.2.1.jar:/Users/coagus/.m2/repository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar:/Users/coagus/.m2/repository/io/netty/netty-transport/4.1.110.Final/netty-transport-4.1.110.Final.jar:/Users/coagus/.m2/repository/io/netty/netty-common/4.1.110.Final/netty-common-4.1.110.Final.jar:/Users/coagus/.m2/repository/io/netty/netty-buffer/4.1.110.Final/netty-buffer-4.1.110.Final.jar:/Users/coagus/.m2/repository/io/netty/netty-resolver/4.1.110.Final/netty-resolver-4.1.110.Final.jar:/Users/coagus/.m2/repository/io/netty/netty-codec-haproxy/4.1.110.Final/netty-codec-haproxy-4.1.110.Final.jar:/Users/coagus/.m2/repository/io/netty/netty-codec/4.1.110.Final/netty-codec-4.1.110.Final.jar:/Users/coagus/.m2/repository/io/netty/netty-codec-http2/4.1.110.Final/netty-codec-http2-4.1.110.Final.jar:/Users/coagus/.m2/repository/io/netty/netty-handler/4.1.110.Final/netty-handler-4.1.110.Final.jar:/Users/coagus/.m2/repository/io/netty/netty-codec-http/4.1.110.Final/netty-codec-http-4.1.110.Final.jar:/Users/coagus/.m2/repository/io/netty/netty-resolver-dns/4.1.110.Final/netty-resolver-dns-4.1.110.Final.jar:/Users/coagus/.m2/repository/io/netty/netty-codec-dns/4.1.110.Final/netty-codec-dns-4.1.110.Final.jar:/Users/coagus/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.110.Final/netty-transport-native-unix-common-4.1.110.Final-linux-x86_64.jar:/Users/coagus/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.110.Final/netty-transport-native-unix-common-4.1.110.Final-linux-aarch_64.jar:/Users/coagus/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.110.Final/netty-transport-native-unix-common-4.1.110.Final-osx-x86_64.jar:/Users/coagus/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.110.Final/netty-transport-native-unix-common-4.1.110.Final-osx-aarch_64.jar:/Users/coagus/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/Users/coagus/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/coagus/.m2/repository/io/netty/netty-handler-proxy/4.1.110.Final/netty-handler-proxy-4.1.110.Final.jar:/Users/coagus/.m2/repository/io/netty/netty-codec-socks/4.1.110.Final/netty-codec-socks-4.1.110.Final.jar:/Users/coagus/.m2/repository/io/netty/netty-transport-native-epoll/4.1.110.Final/netty-transport-native-epoll-4.1.110.Final-linux-x86_64.jar:/Users/coagus/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.110.Final/netty-transport-native-unix-common-4.1.110.Final.jar:/Users/coagus/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.110.Final/netty-transport-classes-epoll-4.1.110.Final.jar:/Users/coagus/.m2/repository/io/netty/netty-transport-native-epoll/4.1.110.Final/netty-transport-native-epoll-4.1.110.Final-linux-aarch_64.jar:/Users/coagus/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.110.Final/netty-transport-native-kqueue-4.1.110.Final-osx-x86_64.jar:/Users/coagus/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.110.Final/netty-transport-classes-kqueue-4.1.110.Final.jar:/Users/coagus/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.110.Final/netty-resolver-dns-native-macos-4.1.110.Final-osx-x86_64.jar:/Users/coagus/.m2/repository/io/netty/netty-resolver-dns-classes-macos/4.1.110.Final/netty-resolver-dns-classes-macos-4.1.110.Final.jar:/Users/coagus/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.110.Final/netty-transport-native-kqueue-4.1.110.Final-osx-aarch_64.jar:/Users/coagus/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.110.Final/netty-resolver-dns-native-macos-4.1.110.Final-osx-aarch_64.jar:/Users/coagus/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.65.Final/netty-tcnative-boringssl-static-2.0.65.Final-linux-x86_64.jar:/Users/coagus/.m2/repository/io/netty/netty-tcnative-classes/2.0.65.Final/netty-tcnative-classes-2.0.65.Final.jar:/Users/coagus/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.65.Final/netty-tcnative-boringssl-static-2.0.65.Final-linux-aarch_64.jar:/Users/coagus/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.65.Final/netty-tcnative-boringssl-static-2.0.65.Final-osx-x86_64.jar:/Users/coagus/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.65.Final/netty-tcnative-boringssl-static-2.0.65.Final-osx-aarch_64.jar:/Users/coagus/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.65.Final/netty-tcnative-boringssl-static-2.0.65.Final-windows-x86_64.jar:/Users/coagus/.m2/repository/com/aayushatharva/brotli4j/brotli4j/1.16.0/brotli4j-1.16.0.jar:/Users/coagus/.m2/repository/com/aayushatharva/brotli4j/service/1.16.0/service-1.16.0.jar:/Users/coagus/.m2/repository/com/aayushatharva/brotli4j/native-osx-aarch64/1.16.0/native-osx-aarch64-1.16.0.jar:/Users/coagus/.m2/repository/org/apache/httpcomponents/httpclient/4.5.14/httpclient-4.5.14.jar:/Users/coagus/.m2/repository/org/apache/httpcomponents/httpcore/4.4.16/httpcore-4.4.16.jar:/Users/coagus/.m2/repository/commons-codec/commons-codec/1.16.1/commons-codec-1.16.1.jar:/Users/coagus/.m2/repository/ch/qos/logback/logback-classic/1.5.4/logback-classic-1.5.4.jar:/Users/coagus/.m2/repository/ch/qos/logback/logback-core/1.5.4/logback-core-1.5.4.jar:/Users/coagus/.m2/repository/org/slf4j/jcl-over-slf4j/2.0.12/jcl-over-slf4j-2.0.12.jar:/Users/coagus/.m2/repository/org/slf4j/slf4j-api/2.0.12/slf4j-api-2.0.12.jar:/Users/coagus/.m2/repository/org/antlr/antlr4-runtime/4.13.1/antlr4-runtime-4.13.1.jar:/Users/coagus/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/Users/coagus/.m2/repository/net/minidev/json-smart/2.5.1/json-smart-2.5.1.jar:/Users/coagus/.m2/repository/net/minidev/accessors-smart/2.5.1/accessors-smart-2.5.1.jar:/Users/coagus/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar:/Users/coagus/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/Users/coagus/.m2/repository/de/siegmar/fastcsv/3.1.0/fastcsv-3.1.0.jar:/Users/coagus/.m2/repository/info/picocli/picocli/4.7.5/picocli-4.7.5.jar:/Users/coagus/.m2/repository/io/github/classgraph/classgraph/4.8.170/classgraph-4.8.170.jar:/Users/coagus/.m2/repository/io/github/t12y/resemble/1.1.0/resemble-1.1.0.jar:/Users/coagus/.m2/repository/io/github/t12y/ssim/1.0.0/ssim-1.0.0.jar:/Users/coagus/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/coagus/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/coagus/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/coagus/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/coagus/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/coagus/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="user.timezone" value="America/Guatemala"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="24"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="GT"/>
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/24.0.1/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/coagus/Repositories/github/microservices-architecture/karatest/target/surefire/surefirebooter-20250613023458309_3.jar /Users/coagus/Repositories/github/microservices-architecture/karatest/target/surefire 2025-06-13T02-34-58_249-jvmRun1 surefire-20250613023458309_1tmp surefire_0-20250613023458309_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/coagus/Repositories/github/microservices-architecture/karatest/target/test-classes:/Users/coagus/Repositories/github/microservices-architecture/karatest/target/classes:/Users/coagus/.m2/repository/io/karatelabs/karate-junit5/1.5.0/karate-junit5-1.5.0.jar:/Users/coagus/.m2/repository/io/karatelabs/karate-core/1.5.0/karate-core-1.5.0.jar:/Users/coagus/.m2/repository/org/graalvm/js/js-scriptengine/24.0.0/js-scriptengine-24.0.0.jar:/Users/coagus/.m2/repository/org/graalvm/polyglot/polyglot/24.0.0/polyglot-24.0.0.jar:/Users/coagus/.m2/repository/org/graalvm/sdk/collections/24.0.0/collections-24.0.0.jar:/Users/coagus/.m2/repository/org/graalvm/sdk/nativeimage/24.0.0/nativeimage-24.0.0.jar:/Users/coagus/.m2/repository/org/graalvm/sdk/word/24.0.0/word-24.0.0.jar:/Users/coagus/.m2/repository/org/graalvm/js/js-language/24.0.0/js-language-24.0.0.jar:/Users/coagus/.m2/repository/org/graalvm/regex/regex/24.0.0/regex-24.0.0.jar:/Users/coagus/.m2/repository/org/graalvm/truffle/truffle-api/24.0.0/truffle-api-24.0.0.jar:/Users/coagus/.m2/repository/org/graalvm/shadowed/icu4j/24.0.0/icu4j-24.0.0.jar:/Users/coagus/.m2/repository/org/thymeleaf/thymeleaf/3.1.2.RELEASE/thymeleaf-3.1.2.RELEASE.jar:/Users/coagus/.m2/repository/ognl/ognl/3.3.4/ognl-3.3.4.jar:/Users/coagus/.m2/repository/org/javassist/javassist/3.29.0-GA/javassist-3.29.0-GA.jar:/Users/coagus/.m2/repository/org/attoparser/attoparser/2.0.7.RELEASE/attoparser-2.0.7.RELEASE.jar:/Users/coagus/.m2/repository/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar:/Users/coagus/.m2/repository/com/linecorp/armeria/armeria/1.29.2/armeria-1.29.2.jar:/Users/coagus/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.1/jackson-core-2.17.1.jar:/Users/coagus/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.1/jackson-annotations-2.17.1.jar:/Users/coagus/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.1/jackson-databind-2.17.1.jar:/Users/coagus/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.17.1/jackson-datatype-jdk8-2.17.1.jar:/Users/coagus/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.17.1/jackson-datatype-jsr310-2.17.1.jar:/Users/coagus/.m2/repository/io/micrometer/micrometer-core/1.13.0/micrometer-core-1.13.0.jar:/Users/coagus/.m2/repository/io/micrometer/micrometer-commons/1.13.0/micrometer-commons-1.13.0.jar:/Users/coagus/.m2/repository/io/micrometer/micrometer-observation/1.13.0/micrometer-observation-1.13.0.jar:/Users/coagus/.m2/repository/org/hdrhistogram/HdrHistogram/2.2.1/HdrHistogram-2.2.1.jar:/Users/coagus/.m2/repository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar:/Users/coagus/.m2/repository/io/netty/netty-transport/4.1.110.Final/netty-transport-4.1.110.Final.jar:/Users/coagus/.m2/repository/io/netty/netty-common/4.1.110.Final/netty-common-4.1.110.Final.jar:/Users/coagus/.m2/repository/io/netty/netty-buffer/4.1.110.Final/netty-buffer-4.1.110.Final.jar:/Users/coagus/.m2/repository/io/netty/netty-resolver/4.1.110.Final/netty-resolver-4.1.110.Final.jar:/Users/coagus/.m2/repository/io/netty/netty-codec-haproxy/4.1.110.Final/netty-codec-haproxy-4.1.110.Final.jar:/Users/coagus/.m2/repository/io/netty/netty-codec/4.1.110.Final/netty-codec-4.1.110.Final.jar:/Users/coagus/.m2/repository/io/netty/netty-codec-http2/4.1.110.Final/netty-codec-http2-4.1.110.Final.jar:/Users/coagus/.m2/repository/io/netty/netty-handler/4.1.110.Final/netty-handler-4.1.110.Final.jar:/Users/coagus/.m2/repository/io/netty/netty-codec-http/4.1.110.Final/netty-codec-http-4.1.110.Final.jar:/Users/coagus/.m2/repository/io/netty/netty-resolver-dns/4.1.110.Final/netty-resolver-dns-4.1.110.Final.jar:/Users/coagus/.m2/repository/io/netty/netty-codec-dns/4.1.110.Final/netty-codec-dns-4.1.110.Final.jar:/Users/coagus/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.110.Final/netty-transport-native-unix-common-4.1.110.Final-linux-x86_64.jar:/Users/coagus/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.110.Final/netty-transport-native-unix-common-4.1.110.Final-linux-aarch_64.jar:/Users/coagus/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.110.Final/netty-transport-native-unix-common-4.1.110.Final-osx-x86_64.jar:/Users/coagus/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.110.Final/netty-transport-native-unix-common-4.1.110.Final-osx-aarch_64.jar:/Users/coagus/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/Users/coagus/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/coagus/.m2/repository/io/netty/netty-handler-proxy/4.1.110.Final/netty-handler-proxy-4.1.110.Final.jar:/Users/coagus/.m2/repository/io/netty/netty-codec-socks/4.1.110.Final/netty-codec-socks-4.1.110.Final.jar:/Users/coagus/.m2/repository/io/netty/netty-transport-native-epoll/4.1.110.Final/netty-transport-native-epoll-4.1.110.Final-linux-x86_64.jar:/Users/coagus/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.110.Final/netty-transport-native-unix-common-4.1.110.Final.jar:/Users/coagus/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.110.Final/netty-transport-classes-epoll-4.1.110.Final.jar:/Users/coagus/.m2/repository/io/netty/netty-transport-native-epoll/4.1.110.Final/netty-transport-native-epoll-4.1.110.Final-linux-aarch_64.jar:/Users/coagus/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.110.Final/netty-transport-native-kqueue-4.1.110.Final-osx-x86_64.jar:/Users/coagus/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.110.Final/netty-transport-classes-kqueue-4.1.110.Final.jar:/Users/coagus/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.110.Final/netty-resolver-dns-native-macos-4.1.110.Final-osx-x86_64.jar:/Users/coagus/.m2/repository/io/netty/netty-resolver-dns-classes-macos/4.1.110.Final/netty-resolver-dns-classes-macos-4.1.110.Final.jar:/Users/coagus/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.110.Final/netty-transport-native-kqueue-4.1.110.Final-osx-aarch_64.jar:/Users/coagus/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.110.Final/netty-resolver-dns-native-macos-4.1.110.Final-osx-aarch_64.jar:/Users/coagus/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.65.Final/netty-tcnative-boringssl-static-2.0.65.Final-linux-x86_64.jar:/Users/coagus/.m2/repository/io/netty/netty-tcnative-classes/2.0.65.Final/netty-tcnative-classes-2.0.65.Final.jar:/Users/coagus/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.65.Final/netty-tcnative-boringssl-static-2.0.65.Final-linux-aarch_64.jar:/Users/coagus/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.65.Final/netty-tcnative-boringssl-static-2.0.65.Final-osx-x86_64.jar:/Users/coagus/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.65.Final/netty-tcnative-boringssl-static-2.0.65.Final-osx-aarch_64.jar:/Users/coagus/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.65.Final/netty-tcnative-boringssl-static-2.0.65.Final-windows-x86_64.jar:/Users/coagus/.m2/repository/com/aayushatharva/brotli4j/brotli4j/1.16.0/brotli4j-1.16.0.jar:/Users/coagus/.m2/repository/com/aayushatharva/brotli4j/service/1.16.0/service-1.16.0.jar:/Users/coagus/.m2/repository/com/aayushatharva/brotli4j/native-osx-aarch64/1.16.0/native-osx-aarch64-1.16.0.jar:/Users/coagus/.m2/repository/org/apache/httpcomponents/httpclient/4.5.14/httpclient-4.5.14.jar:/Users/coagus/.m2/repository/org/apache/httpcomponents/httpcore/4.4.16/httpcore-4.4.16.jar:/Users/coagus/.m2/repository/commons-codec/commons-codec/1.16.1/commons-codec-1.16.1.jar:/Users/coagus/.m2/repository/ch/qos/logback/logback-classic/1.5.4/logback-classic-1.5.4.jar:/Users/coagus/.m2/repository/ch/qos/logback/logback-core/1.5.4/logback-core-1.5.4.jar:/Users/coagus/.m2/repository/org/slf4j/jcl-over-slf4j/2.0.12/jcl-over-slf4j-2.0.12.jar:/Users/coagus/.m2/repository/org/slf4j/slf4j-api/2.0.12/slf4j-api-2.0.12.jar:/Users/coagus/.m2/repository/org/antlr/antlr4-runtime/4.13.1/antlr4-runtime-4.13.1.jar:/Users/coagus/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/Users/coagus/.m2/repository/net/minidev/json-smart/2.5.1/json-smart-2.5.1.jar:/Users/coagus/.m2/repository/net/minidev/accessors-smart/2.5.1/accessors-smart-2.5.1.jar:/Users/coagus/.m2/repository/org/ow2/asm/asm/9.6/asm-9.6.jar:/Users/coagus/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/Users/coagus/.m2/repository/de/siegmar/fastcsv/3.1.0/fastcsv-3.1.0.jar:/Users/coagus/.m2/repository/info/picocli/picocli/4.7.5/picocli-4.7.5.jar:/Users/coagus/.m2/repository/io/github/classgraph/classgraph/4.8.170/classgraph-4.8.170.jar:/Users/coagus/.m2/repository/io/github/t12y/resemble/1.1.0/resemble-1.1.0.jar:/Users/coagus/.m2/repository/io/github/t12y/ssim/1.0.0/ssim-1.0.0.jar:/Users/coagus/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/coagus/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/coagus/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/coagus/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/coagus/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/coagus/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/coagus"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-04-15"/>
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/24.0.1/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/coagus/Repositories/github/microservices-architecture/karatest"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/coagus/Repositories/github/microservices-architecture/karatest/target/surefire/surefirebooter-20250613023458309_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="24.0.1"/>
+    <property name="user.name" value="coagus"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="15.5"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/coagus/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/pd/zxg0nj1x1473zm1nmrf7ct6r0000gn/T/"/>
+    <property name="java.version" value="24.0.1"/>
+    <property name="user.dir" value="/Users/coagus/Repositories/github/microservices-architecture/karatest"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/coagus/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="24.0.1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="68.0"/>
+  </properties>
+  <testcase name="testParallel" classname="microservicios.MicroservicesTest" time="2.348">
+    <system-out><![CDATA[02:34:59.081 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+02:34:59.086 [main] DEBUG com.intuit.karate.Suite - waiting for 7 features to complete
+02:34:59.722 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+02:34:59.722 [pool-2-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+02:34:59.722 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+02:34:59.722 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+02:34:59.722 [pool-2-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+02:34:59.763 [pool-2-thread-2] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:microservicios/clientes/create-cliente.feature')
+02:34:59.763 [pool-2-thread-4] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:microservicios/clientes/create-cliente.feature')
+02:34:59.992 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/clientes
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 188
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"contrasena":"18692","estado":1,"persona":{"nombre":"Persona Test 18692","genero":"M","edad":25,"identificacion":"9456698883","direccion":"Otavalo sn y principal","telefono":"098254785"}}
+
+02:34:59.992 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/clientes
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 188
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"contrasena":"50044","estado":1,"persona":{"nombre":"Persona Test 50044","genero":"M","edad":25,"identificacion":"4790964658","direccion":"Otavalo sn y principal","telefono":"098254785"}}
+
+02:34:59.992 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/clientes
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 188
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"contrasena":"44856","estado":1,"persona":{"nombre":"Persona Test 44856","genero":"M","edad":25,"identificacion":"5030503761","direccion":"Otavalo sn y principal","telefono":"098254785"}}
+
+02:35:00.107 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 114
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 13 Jun 2025 08:35:00 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":34,"contrasena":"18692","estado":1,"persona":{"id":34,"nombre":"Persona Test 18692","genero":"M","edad":25,"identificacion":"9456698883","direccion":"Otavalo sn y principal","telefono":"098254785"}}
+
+02:35:00.108 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 114
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 13 Jun 2025 08:35:00 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":33,"contrasena":"50044","estado":1,"persona":{"id":33,"nombre":"Persona Test 50044","genero":"M","edad":25,"identificacion":"4790964658","direccion":"Otavalo sn y principal","telefono":"098254785"}}
+
+02:35:00.108 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 114
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 13 Jun 2025 08:35:00 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":32,"contrasena":"44856","estado":1,"persona":{"id":32,"nombre":"Persona Test 44856","genero":"M","edad":25,"identificacion":"5030503761","direccion":"Otavalo sn y principal","telefono":"098254785"}}
+
+02:35:00.123 [pool-2-thread-4] INFO  com.intuit.karate - [print] data:  {
+  "clienteId": 34,
+  "nombre": "Persona Test 18692",
+  "contrasena": "18692"
+}
+ 
+02:35:00.123 [pool-2-thread-2] INFO  com.intuit.karate - [print] data:  {
+  "clienteId": 33,
+  "nombre": "Persona Test 50044",
+  "contrasena": "50044"
+}
+ 
+02:35:00.123 [pool-2-thread-1] INFO  com.intuit.karate - [print] data:  {
+  "clienteId": 32,
+  "nombre": "Persona Test 44856",
+  "contrasena": "44856"
+}
+ 
+02:35:00.123 [pool-2-thread-4] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:microservicios/clientes/create-cliente.feature')
+02:35:00.124 [pool-2-thread-2] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:microservicios/clientes/create-cliente.feature')
+02:35:00.124 [pool-2-thread-3] WARN  com.intuit.karate - this thread waited 360 milliseconds for callonce lock: read('classpath:microservicios/clientes/create-cliente.feature')
+02:35:00.124 [pool-2-thread-5] WARN  com.intuit.karate - this thread waited 360 milliseconds for callonce lock: read('classpath:microservicios/clientes/create-cliente.feature')
+02:35:00.126 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/clientes
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+02:35:00.126 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/clientes/34/nombre
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+02:35:00.127 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+02:35:00.129 [pool-2-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:microservicios/clientes/create-cliente.feature')
+02:35:00.132 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/clientes/34
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+02:35:00.133 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > DELETE http://localhost:8080/clientes/33
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+02:35:00.138 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/clientes
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 188
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"contrasena":"40567","estado":1,"persona":{"nombre":"Persona Test 40567","genero":"M","edad":25,"identificacion":"5492031847","direccion":"Otavalo sn y principal","telefono":"098254785"}}
+
+02:35:00.160 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 34
+1 < 200
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 18
+1 < Date: Fri, 13 Jun 2025 08:35:00 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+Persona Test 18692
+
+02:35:00.160 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 28
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 13 Jun 2025 08:35:00 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":34,"contrasena":"18692","estado":1,"persona":{"id":34,"nombre":"Persona Test 18692","genero":"M","edad":25,"identificacion":"9456698883","direccion":"Otavalo sn y principal","telefono":"098254785"}}
+
+02:35:00.165 [pool-2-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+02:35:00.166 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 28
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 13 Jun 2025 08:35:00 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":35,"contrasena":"40567","estado":1,"persona":{"id":35,"nombre":"Persona Test 40567","genero":"M","edad":25,"identificacion":"5492031847","direccion":"Otavalo sn y principal","telefono":"098254785"}}
+
+02:35:00.166 [pool-2-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+02:35:00.166 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 33
+1 < 200
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 31
+1 < Date: Fri, 13 Jun 2025 08:35:00 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+Cliente eliminado correctamente
+
+02:35:00.167 [pool-2-thread-5] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:microservicios/clientes/create-cliente.feature')
+02:35:00.169 [pool-2-thread-1] INFO  com.intuit.karate - [print] data:  {
+  "clienteId": 35,
+  "nombre": "Persona Test 40567",
+  "contrasena": "40567"
+}
+ 
+02:35:00.170 [pool-2-thread-1] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:microservicios/clientes/create-cliente.feature')
+02:35:00.172 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > PUT http://localhost:8080/clientes/35
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 196
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"contrasena":"4321","estado":1,"persona":{"nombre":"Persona Test Actualizado","genero":"M","edad":25,"identificacion":"1913401890101","direccion":"Otavalo sn y principal","telefono":"098254785"}}
+
+02:35:00.173 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/clientes
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 188
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"contrasena":"43510","estado":1,"persona":{"nombre":"Persona Test 43510","genero":"M","edad":25,"identificacion":"7275723906","direccion":"Otavalo sn y principal","telefono":"098254785"}}
+
+02:35:00.174 [pool-2-thread-4] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:microservicios/cuentas/create-cuenta.feature')
+02:35:00.176 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+02:35:00.182 [pool-2-thread-4] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:microservicios/clientes/create-cliente.feature')
+02:35:00.189 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 16
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 13 Jun 2025 08:35:00 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":36,"contrasena":"43510","estado":1,"persona":{"id":36,"nombre":"Persona Test 43510","genero":"M","edad":25,"identificacion":"7275723906","direccion":"Otavalo sn y principal","telefono":"098254785"}}
+
+02:35:00.194 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/clientes
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 188
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"contrasena":"45854","estado":1,"persona":{"nombre":"Persona Test 45854","genero":"M","edad":25,"identificacion":"5864797253","direccion":"Otavalo sn y principal","telefono":"098254785"}}
+
+02:35:00.196 [pool-2-thread-5] INFO  com.intuit.karate - [print] data:  {
+  "clienteId": 36,
+  "nombre": "Persona Test 43510",
+  "contrasena": "43510"
+}
+ 
+02:35:00.197 [pool-2-thread-5] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:microservicios/clientes/create-cliente.feature')
+02:35:00.200 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 28
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 13 Jun 2025 08:35:00 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":35,"contrasena":"4321","estado":1,"persona":{"id":35,"nombre":"Persona Test Actualizado","genero":"M","edad":25,"identificacion":"1913401890101","direccion":"Otavalo sn y principal","telefono":"098254785"}}
+
+02:35:00.202 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/cuentas
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 121
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"numeroCuenta":"9725223996","tipoCuenta":"CORRIENTE","saldoInicial":100,"saldoDisponible":100,"estado":1,"clienteId":36}
+
+02:35:00.206 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+02:35:00.211 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 16
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 13 Jun 2025 08:35:00 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":37,"contrasena":"45854","estado":1,"persona":{"id":37,"nombre":"Persona Test 45854","genero":"M","edad":25,"identificacion":"5864797253","direccion":"Otavalo sn y principal","telefono":"098254785"}}
+
+02:35:00.213 [pool-2-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:microservicios/cuentas/create-cuenta.feature')
+02:35:00.219 [pool-2-thread-4] INFO  com.intuit.karate - [print] data:  {
+  "clienteId": 37,
+  "nombre": "Persona Test 45854",
+  "contrasena": "45854"
+}
+ 
+02:35:00.220 [pool-2-thread-4] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:microservicios/clientes/create-cliente.feature')
+02:35:00.221 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 94
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 13 Jun 2025 08:35:00 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+[{"id":1,"contrasena":"51128","estado":1,"persona":{"id":1,"nombre":"Persona Test 51128","genero":"M","edad":25,"identificacion":"9099905522","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":3,"contrasena":"25009","estado":1,"persona":{"id":3,"nombre":"Persona Test 25009","genero":"M","edad":25,"identificacion":"3324417794","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":4,"contrasena":"4321","estado":1,"persona":{"id":4,"nombre":"Persona Test Actualizado","genero":"M","edad":25,"identificacion":"1913401890101","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":5,"contrasena":"40056","estado":1,"persona":{"id":5,"nombre":"Persona Test 40056","genero":"M","edad":25,"identificacion":"3701421575","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":6,"contrasena":"42373","estado":1,"persona":{"id":6,"nombre":"Persona Test 42373","genero":"M","edad":25,"identificacion":"6919607222","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":7,"contrasena":"68159","estado":1,"persona":{"id":7,"nombre":"Persona Test 68159","genero":"M","edad":25,"identificacion":"4685511191","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":8,"contrasena":"23798","estado":1,"persona":{"id":9,"nombre":"Persona Test 23798","genero":"M","edad":25,"identificacion":"5906322547","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":9,"contrasena":"22413","estado":1,"persona":{"id":8,"nombre":"Persona Test 22413","genero":"M","edad":25,"identificacion":"3449601915","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":10,"contrasena":"22078","estado":1,"persona":{"id":10,"nombre":"Persona Test 22078","genero":"M","edad":25,"identificacion":"2263437970","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":11,"contrasena":"64300","estado":1,"persona":{"id":12,"nombre":"Persona Test 64300","genero":"M","edad":25,"identificacion":"1476594016","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":13,"contrasena":"90781","estado":1,"persona":{"id":11,"nombre":"Persona Test 90781","genero":"M","edad":25,"identificacion":"1111633564","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":14,"contrasena":"4321","estado":1,"persona":{"id":14,"nombre":"Persona Test Actualizado","genero":"M","edad":25,"identificacion":"1913401890101","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":15,"contrasena":"85333","estado":1,"persona":{"id":15,"nombre":"Persona Test 85333","genero":"M","edad":25,"identificacion":"8352160540","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":16,"contrasena":"17431","estado":1,"persona":{"id":16,"nombre":"Persona Test 17431","genero":"M","edad":25,"identificacion":"5197689718","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":17,"contrasena":"94318","estado":1,"persona":{"id":17,"nombre":"Persona Test 94318","genero":"M","edad":25,"identificacion":"4952520390","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":18,"contrasena":"28808","estado":1,"persona":{"id":19,"nombre":"Persona Test 28808","genero":"M","edad":25,"identificacion":"2005267061","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":19,"contrasena":"71560","estado":1,"persona":{"id":18,"nombre":"Persona Test 71560","genero":"M","edad":25,"identificacion":"4275770837","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":21,"contrasena":"4321","estado":1,"persona":{"id":21,"nombre":"Persona Test Actualizado","genero":"M","edad":25,"identificacion":"1913401890101","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":22,"contrasena":"93267","estado":1,"persona":{"id":22,"nombre":"Persona Test 93267","genero":"M","edad":25,"identificacion":"7176217874","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":23,"contrasena":"12948","estado":1,"persona":{"id":23,"nombre":"Persona Test 12948","genero":"M","edad":25,"identificacion":"7513158432","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":24,"contrasena":"25109","estado":1,"persona":{"id":24,"nombre":"Persona Test 25109","genero":"M","edad":25,"identificacion":"4030723229","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":25,"contrasena":"14994","estado":1,"persona":{"id":26,"nombre":"Persona Test 14994","genero":"M","edad":25,"identificacion":"3402274809","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":26,"contrasena":"96962","estado":1,"persona":{"id":27,"nombre":"Persona Test 96962","genero":"M","edad":25,"identificacion":"7905078692","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":28,"contrasena":"4321","estado":1,"persona":{"id":28,"nombre":"Persona Test Actualizado","genero":"M","edad":25,"identificacion":"1913401890101","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":29,"contrasena":"16069","estado":1,"persona":{"id":29,"nombre":"Persona Test 16069","genero":"M","edad":25,"identificacion":"2032179392","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":30,"contrasena":"21925","estado":1,"persona":{"id":30,"nombre":"Persona Test 21925","genero":"M","edad":25,"identificacion":"4419931662","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":31,"contrasena":"19141","estado":1,"persona":{"id":31,"nombre":"Persona Test 19141","genero":"M","edad":25,"identificacion":"7262543795","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":32,"contrasena":"44856","estado":1,"persona":{"id":32,"nombre":"Persona Test 44856","genero":"M","edad":25,"identificacion":"5030503761","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":33,"contrasena":"50044","estado":1,"persona":{"id":33,"nombre":"Persona Test 50044","genero":"M","edad":25,"identificacion":"4790964658","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":34,"contrasena":"18692","estado":1,"persona":{"id":34,"nombre":"Persona Test 18692","genero":"M","edad":25,"identificacion":"9456698883","direccion":"Otavalo sn y principal","telefono":"098254785"}}]
+
+02:35:00.222 [pool-2-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:microservicios/clientes/create-cliente.feature')
+02:35:00.226 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/cuentas
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 121
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"numeroCuenta":"7081823542","tipoCuenta":"CORRIENTE","saldoInicial":100,"saldoDisponible":100,"estado":1,"clienteId":37}
+
+02:35:00.231 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/clientes
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 188
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"contrasena":"66188","estado":1,"persona":{"nombre":"Persona Test 66188","genero":"M","edad":25,"identificacion":"7003579425","direccion":"Otavalo sn y principal","telefono":"098254785"}}
+
+02:35:00.264 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 33
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 13 Jun 2025 08:35:00 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":38,"contrasena":"66188","estado":1,"persona":{"id":38,"nombre":"Persona Test 66188","genero":"M","edad":25,"identificacion":"7003579425","direccion":"Otavalo sn y principal","telefono":"098254785"}}
+
+02:35:00.266 [pool-2-thread-1] INFO  com.intuit.karate - [print] data:  {
+  "clienteId": 38,
+  "nombre": "Persona Test 66188",
+  "contrasena": "66188"
+}
+ 
+02:35:00.267 [pool-2-thread-1] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:microservicios/clientes/create-cliente.feature')
+02:35:00.274 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/cuentas
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 121
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"numeroCuenta":"3508596225","tipoCuenta":"CORRIENTE","saldoInicial":100,"saldoDisponible":100,"estado":1,"clienteId":38}
+
+02:35:00.322 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 95
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 13 Jun 2025 08:35:00 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":12,"numeroCuenta":"7081823542","tipoCuenta":"CORRIENTE","saldoInicial":100.0,"saldoDisponible":100.0,"estado":true,"clienteId":37,"movimientos":null}
+
+02:35:00.324 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 120
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 13 Jun 2025 08:35:00 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":11,"numeroCuenta":"9725223996","tipoCuenta":"CORRIENTE","saldoInicial":100.0,"saldoDisponible":100.0,"estado":true,"clienteId":36,"movimientos":null}
+
+02:35:00.326 [pool-2-thread-4] INFO  com.intuit.karate - [print] dataCuenta:  {
+  "cuentaId": 12,
+  "cuenta": "7081823542",
+  "saldoInicial": 100.0
+}
+ 
+02:35:00.327 [pool-2-thread-5] INFO  com.intuit.karate - [print] dataCuenta:  {
+  "cuentaId": 11,
+  "cuenta": "9725223996",
+  "saldoInicial": 100.0
+}
+ 
+02:35:00.327 [pool-2-thread-4] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:microservicios/cuentas/create-cuenta.feature')
+02:35:00.327 [pool-2-thread-2] WARN  com.intuit.karate - this thread waited 149 milliseconds for callonce lock: read('classpath:microservicios/cuentas/create-cuenta.feature')
+02:35:00.328 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8081/cuentas
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+02:35:00.328 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8081/cuentas/12
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+02:35:00.332 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 58
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 13 Jun 2025 08:35:00 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":13,"numeroCuenta":"3508596225","tipoCuenta":"CORRIENTE","saldoInicial":100.0,"saldoDisponible":100.0,"estado":true,"clienteId":38,"movimientos":null}
+
+02:35:00.334 [pool-2-thread-1] INFO  com.intuit.karate - [print] dataCuenta:  {
+  "cuentaId": 13,
+  "cuenta": "3508596225",
+  "saldoInicial": 100.0
+}
+ 
+02:35:00.335 [pool-2-thread-1] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:microservicios/cuentas/create-cuenta.feature')
+02:35:00.337 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/movimientos
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 39
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"noCuenta":"3508596225","monto":"119"}
+
+02:35:00.346 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 17
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 13 Jun 2025 08:35:00 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":12,"numeroCuenta":"7081823542","tipoCuenta":"CORRIENTE","saldoInicial":100.0,"saldoDisponible":100.0,"estado":true,"clienteId":37,"movimientos":[]}
+
+02:35:00.360 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 22
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 13 Jun 2025 08:35:00 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":10,"fecha":"2025-06-13T08:35:00.345291","tipoMovimiento":"DEPOSITO","valor":119.0,"saldo":219.0}
+
+02:35:00.369 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 40
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 13 Jun 2025 08:35:00 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+[{"id":1,"numeroCuenta":"9999881282","tipoCuenta":"CORRIENTE","saldoInicial":100.0,"saldoDisponible":100.0,"estado":true,"clienteId":1,"movimientos":[]},{"id":2,"numeroCuenta":"2660066033","tipoCuenta":"CORRIENTE","saldoInicial":100.0,"saldoDisponible":100.0,"estado":true,"clienteId":15,"movimientos":[]},{"id":3,"numeroCuenta":"9217161550","tipoCuenta":"CORRIENTE","saldoInicial":100.0,"saldoDisponible":100.0,"estado":true,"clienteId":16,"movimientos":[]},{"id":4,"numeroCuenta":"1335240393","tipoCuenta":"CORRIENTE","saldoInicial":100.0,"saldoDisponible":359.0,"estado":true,"clienteId":17,"movimientos":[{"id":1,"fecha":"2025-06-13T08:29:35.299291","tipoMovimiento":"DEPOSITO","valor":109.0,"saldo":209.0},{"id":4,"fecha":"2025-06-13T08:30:37.304242","tipoMovimiento":"DEPOSITO","valor":150.0,"saldo":359.0}]},{"id":5,"numeroCuenta":"7663287488","tipoCuenta":"CORRIENTE","saldoInicial":100.0,"saldoDisponible":100.0,"estado":true,"clienteId":23,"movimientos":[]},{"id":6,"numeroCuenta":"7913591312","tipoCuenta":"CORRIENTE","saldoInicial":100.0,"saldoDisponible":100.0,"estado":true,"clienteId":22,"movimientos":[]},{"id":7,"numeroCuenta":"3347758041","tipoCuenta":"CORRIENTE","saldoInicial":100.0,"saldoDisponible":1027.0,"estado":true,"clienteId":24,"movimientos":[{"id":5,"fecha":"2025-06-13T08:30:53.65025","tipoMovimiento":"DEPOSITO","valor":903.0,"saldo":1003.0},{"id":7,"fecha":"2025-06-13T08:30:53.659769","tipoMovimiento":"DEPOSITO","valor":927.0,"saldo":1027.0}]},{"id":8,"numeroCuenta":"8528898191","tipoCuenta":"CORRIENTE","saldoInicial":100.0,"saldoDisponible":100.0,"estado":true,"clienteId":29,"movimientos":[]},{"id":9,"numeroCuenta":"6575287062","tipoCuenta":"CORRIENTE","saldoInicial":100.0,"saldoDisponible":100.0,"estado":true,"clienteId":30,"movimientos":[]},{"id":10,"numeroCuenta":"1985179895","tipoCuenta":"CORRIENTE","saldoInicial":100.0,"saldoDisponible":935.0,"estado":true,"clienteId":31,"movimientos":[{"id":8,"fecha":"2025-06-13T08:33:06.681352","tipoMovimiento":"DEPOSITO","valor":835.0,"saldo":935.0}]},{"id":11,"numeroCuenta":"9725223996","tipoCuenta":"CORRIENTE","saldoInicial":100.0,"saldoDisponible":100.0,"estado":true,"clienteId":36,"movimientos":[]},{"id":12,"numeroCuenta":"7081823542","tipoCuenta":"CORRIENTE","saldoInicial":100.0,"saldoDisponible":100.0,"estado":true,"clienteId":37,"movimientos":[]},{"id":13,"numeroCuenta":"3508596225","tipoCuenta":"CORRIENTE","saldoInicial":100.0,"saldoDisponible":100.0,"estado":true,"clienteId":38,"movimientos":[{"id":10,"fecha":"2025-06-13T08:35:00.345291","tipoMovimiento":"DEPOSITO","valor":119.0,"saldo":219.0}]}]
+
+---------------------------------------------------------
+feature: classpath:microservicios/clientes/create-cliente.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 0.3716
+---------------------------------------------------------
+
+02:35:00.528 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 7 (6 remaining) classpath:microservicios/clientes/create-cliente.feature
+---------------------------------------------------------
+feature: classpath:microservicios/clientes/delete-cliente.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 0.4185
+---------------------------------------------------------
+
+02:35:00.615 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 7 (5 remaining) classpath:microservicios/clientes/delete-cliente.feature
+---------------------------------------------------------
+feature: classpath:microservicios/clientes/read-cliente.feature
+scenarios:  3 | passed:  3 | failed:  0 | time: 1.2984
+---------------------------------------------------------
+
+02:35:00.668 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 7 (4 remaining) classpath:microservicios/clientes/read-cliente.feature
+---------------------------------------------------------
+feature: classpath:microservicios/clientes/update-cliente.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 0.0736
+---------------------------------------------------------
+
+02:35:00.713 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 4 of 7 (3 remaining) classpath:microservicios/clientes/update-cliente.feature
+---------------------------------------------------------
+feature: classpath:microservicios/cuentas/create-cuenta.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 0.1606
+---------------------------------------------------------
+
+02:35:00.775 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 5 of 7 (2 remaining) classpath:microservicios/cuentas/create-cuenta.feature
+---------------------------------------------------------
+feature: classpath:microservicios/cuentas/read-cuenta.feature
+scenarios:  2 | passed:  2 | failed:  0 | time: 0.3722
+---------------------------------------------------------
+
+02:35:00.822 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 6 of 7 (1 remaining) classpath:microservicios/cuentas/read-cuenta.feature
+---------------------------------------------------------
+feature: classpath:microservicios/movimientos/movimientos.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 0.1517
+---------------------------------------------------------
+
+02:35:00.877 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 7 of 7 (0 remaining) classpath:microservicios/movimientos/movimientos.feature
+Karate version: 1.5.0
+======================================================
+elapsed:   2.11 | threads:    5 | thread time: 2.85 
+features:     7 | skipped:    0 | efficiency: 0.27
+scenarios:   10 | passed:    10 | failed: 0
+======================================================
+
+HTML report: (paste into browser to view) | Karate version: 1.5.0
+file:///Users/coagus/Repositories/github/microservices-architecture/karatest/target/karate-reports/karate-summary.html
+===================================================================
+
+]]></system-out>
+  </testcase>
+</testsuite>

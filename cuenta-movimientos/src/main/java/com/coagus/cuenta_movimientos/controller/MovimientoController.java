@@ -7,12 +7,14 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.coagus.cuenta_movimientos.dto.RequestMovimientoDTO;
@@ -37,6 +39,8 @@ public class MovimientoController {
 
   // Create
   @PostMapping
+  @ResponseStatus(HttpStatus.CREATED)
+  @Transactional
   public ResponseEntity<?> createMovimiento(@RequestBody RequestMovimientoDTO movimiento) {
     log.info("Creando movimiento: {}", movimiento);
 
@@ -67,12 +71,14 @@ public class MovimientoController {
 
   // Read
   @GetMapping
+  @ResponseStatus(HttpStatus.OK)
   public List<Movimiento> getAllMovimientos() {
     return movimientoRepository.findAll();
   }
 
   // Update
   @PutMapping("/{id}")
+  @ResponseStatus(HttpStatus.OK)
   public Movimiento updateMovimiento(@PathVariable Long id, @RequestBody Movimiento movimiento) {
     Movimiento movimientoExistente = movimientoRepository.findById(id)
       .orElseThrow(() -> new RuntimeException("Movimiento no encontrado"));

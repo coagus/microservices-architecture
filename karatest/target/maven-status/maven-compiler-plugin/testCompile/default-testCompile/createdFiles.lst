@@ -1,0 +1,4 @@
+microservicios/cuentas/CuentasRunner.class
+microservicios/movimientos/MovimientosRunner.class
+microservicios/clientes/ClientesRunner.class
+microservicios/MicroservicesTest.class

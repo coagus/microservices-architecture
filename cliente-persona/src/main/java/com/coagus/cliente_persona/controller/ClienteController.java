@@ -34,7 +34,7 @@ public class ClienteController {
 
     // Create
     @PostMapping
-    @ResponseStatus(HttpStatus.OK)
+    @ResponseStatus(HttpStatus.CREATED)
     public Cliente crearCliente(@RequestBody Cliente cliente) {
         log.debug("Creando cliente: {}", cliente);
         return clienteRepository.save(cliente);

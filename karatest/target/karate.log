@@ -1,0 +1,428 @@
+02:34:59.081 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+02:34:59.086 [main] DEBUG com.intuit.karate.Suite - waiting for 7 features to complete
+02:34:59.722 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+02:34:59.722 [pool-2-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+02:34:59.722 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+02:34:59.722 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+02:34:59.722 [pool-2-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+02:34:59.763 [pool-2-thread-2] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:microservicios/clientes/create-cliente.feature')
+02:34:59.763 [pool-2-thread-4] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:microservicios/clientes/create-cliente.feature')
+02:34:59.992 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/clientes
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 188
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"contrasena":"18692","estado":1,"persona":{"nombre":"Persona Test 18692","genero":"M","edad":25,"identificacion":"9456698883","direccion":"Otavalo sn y principal","telefono":"098254785"}}
+
+02:34:59.992 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/clientes
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 188
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"contrasena":"50044","estado":1,"persona":{"nombre":"Persona Test 50044","genero":"M","edad":25,"identificacion":"4790964658","direccion":"Otavalo sn y principal","telefono":"098254785"}}
+
+02:34:59.992 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/clientes
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 188
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"contrasena":"44856","estado":1,"persona":{"nombre":"Persona Test 44856","genero":"M","edad":25,"identificacion":"5030503761","direccion":"Otavalo sn y principal","telefono":"098254785"}}
+
+02:35:00.107 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 114
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 13 Jun 2025 08:35:00 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":34,"contrasena":"18692","estado":1,"persona":{"id":34,"nombre":"Persona Test 18692","genero":"M","edad":25,"identificacion":"9456698883","direccion":"Otavalo sn y principal","telefono":"098254785"}}
+
+02:35:00.108 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 114
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 13 Jun 2025 08:35:00 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":33,"contrasena":"50044","estado":1,"persona":{"id":33,"nombre":"Persona Test 50044","genero":"M","edad":25,"identificacion":"4790964658","direccion":"Otavalo sn y principal","telefono":"098254785"}}
+
+02:35:00.108 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 114
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 13 Jun 2025 08:35:00 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":32,"contrasena":"44856","estado":1,"persona":{"id":32,"nombre":"Persona Test 44856","genero":"M","edad":25,"identificacion":"5030503761","direccion":"Otavalo sn y principal","telefono":"098254785"}}
+
+02:35:00.123 [pool-2-thread-4] INFO  com.intuit.karate - [print] data:  {
+  "clienteId": 34,
+  "nombre": "Persona Test 18692",
+  "contrasena": "18692"
+}
+ 
+02:35:00.123 [pool-2-thread-2] INFO  com.intuit.karate - [print] data:  {
+  "clienteId": 33,
+  "nombre": "Persona Test 50044",
+  "contrasena": "50044"
+}
+ 
+02:35:00.123 [pool-2-thread-1] INFO  com.intuit.karate - [print] data:  {
+  "clienteId": 32,
+  "nombre": "Persona Test 44856",
+  "contrasena": "44856"
+}
+ 
+02:35:00.123 [pool-2-thread-4] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:microservicios/clientes/create-cliente.feature')
+02:35:00.124 [pool-2-thread-2] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:microservicios/clientes/create-cliente.feature')
+02:35:00.124 [pool-2-thread-3] WARN  com.intuit.karate - this thread waited 360 milliseconds for callonce lock: read('classpath:microservicios/clientes/create-cliente.feature')
+02:35:00.124 [pool-2-thread-5] WARN  com.intuit.karate - this thread waited 360 milliseconds for callonce lock: read('classpath:microservicios/clientes/create-cliente.feature')
+02:35:00.126 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/clientes
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+02:35:00.126 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/clientes/34/nombre
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+02:35:00.127 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+02:35:00.129 [pool-2-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:microservicios/clientes/create-cliente.feature')
+02:35:00.132 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/clientes/34
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+02:35:00.133 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > DELETE http://localhost:8080/clientes/33
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+02:35:00.138 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/clientes
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 188
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"contrasena":"40567","estado":1,"persona":{"nombre":"Persona Test 40567","genero":"M","edad":25,"identificacion":"5492031847","direccion":"Otavalo sn y principal","telefono":"098254785"}}
+
+02:35:00.160 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 34
+1 < 200
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 18
+1 < Date: Fri, 13 Jun 2025 08:35:00 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+Persona Test 18692
+
+02:35:00.160 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 28
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 13 Jun 2025 08:35:00 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":34,"contrasena":"18692","estado":1,"persona":{"id":34,"nombre":"Persona Test 18692","genero":"M","edad":25,"identificacion":"9456698883","direccion":"Otavalo sn y principal","telefono":"098254785"}}
+
+02:35:00.165 [pool-2-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+02:35:00.166 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 28
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 13 Jun 2025 08:35:00 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":35,"contrasena":"40567","estado":1,"persona":{"id":35,"nombre":"Persona Test 40567","genero":"M","edad":25,"identificacion":"5492031847","direccion":"Otavalo sn y principal","telefono":"098254785"}}
+
+02:35:00.166 [pool-2-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+02:35:00.166 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 33
+1 < 200
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Content-Length: 31
+1 < Date: Fri, 13 Jun 2025 08:35:00 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+Cliente eliminado correctamente
+
+02:35:00.167 [pool-2-thread-5] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:microservicios/clientes/create-cliente.feature')
+02:35:00.169 [pool-2-thread-1] INFO  com.intuit.karate - [print] data:  {
+  "clienteId": 35,
+  "nombre": "Persona Test 40567",
+  "contrasena": "40567"
+}
+ 
+02:35:00.170 [pool-2-thread-1] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:microservicios/clientes/create-cliente.feature')
+02:35:00.172 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > PUT http://localhost:8080/clientes/35
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 196
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"contrasena":"4321","estado":1,"persona":{"nombre":"Persona Test Actualizado","genero":"M","edad":25,"identificacion":"1913401890101","direccion":"Otavalo sn y principal","telefono":"098254785"}}
+
+02:35:00.173 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/clientes
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 188
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"contrasena":"43510","estado":1,"persona":{"nombre":"Persona Test 43510","genero":"M","edad":25,"identificacion":"7275723906","direccion":"Otavalo sn y principal","telefono":"098254785"}}
+
+02:35:00.174 [pool-2-thread-4] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:microservicios/cuentas/create-cuenta.feature')
+02:35:00.176 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+02:35:00.182 [pool-2-thread-4] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:microservicios/clientes/create-cliente.feature')
+02:35:00.189 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 16
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 13 Jun 2025 08:35:00 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":36,"contrasena":"43510","estado":1,"persona":{"id":36,"nombre":"Persona Test 43510","genero":"M","edad":25,"identificacion":"7275723906","direccion":"Otavalo sn y principal","telefono":"098254785"}}
+
+02:35:00.194 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/clientes
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 188
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"contrasena":"45854","estado":1,"persona":{"nombre":"Persona Test 45854","genero":"M","edad":25,"identificacion":"5864797253","direccion":"Otavalo sn y principal","telefono":"098254785"}}
+
+02:35:00.196 [pool-2-thread-5] INFO  com.intuit.karate - [print] data:  {
+  "clienteId": 36,
+  "nombre": "Persona Test 43510",
+  "contrasena": "43510"
+}
+ 
+02:35:00.197 [pool-2-thread-5] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:microservicios/clientes/create-cliente.feature')
+02:35:00.200 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 28
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 13 Jun 2025 08:35:00 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":35,"contrasena":"4321","estado":1,"persona":{"id":35,"nombre":"Persona Test Actualizado","genero":"M","edad":25,"identificacion":"1913401890101","direccion":"Otavalo sn y principal","telefono":"098254785"}}
+
+02:35:00.202 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/cuentas
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 121
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"numeroCuenta":"9725223996","tipoCuenta":"CORRIENTE","saldoInicial":100,"saldoDisponible":100,"estado":1,"clienteId":36}
+
+02:35:00.206 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+02:35:00.211 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 16
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 13 Jun 2025 08:35:00 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":37,"contrasena":"45854","estado":1,"persona":{"id":37,"nombre":"Persona Test 45854","genero":"M","edad":25,"identificacion":"5864797253","direccion":"Otavalo sn y principal","telefono":"098254785"}}
+
+02:35:00.213 [pool-2-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:microservicios/cuentas/create-cuenta.feature')
+02:35:00.219 [pool-2-thread-4] INFO  com.intuit.karate - [print] data:  {
+  "clienteId": 37,
+  "nombre": "Persona Test 45854",
+  "contrasena": "45854"
+}
+ 
+02:35:00.220 [pool-2-thread-4] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:microservicios/clientes/create-cliente.feature')
+02:35:00.221 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 94
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 13 Jun 2025 08:35:00 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+[{"id":1,"contrasena":"51128","estado":1,"persona":{"id":1,"nombre":"Persona Test 51128","genero":"M","edad":25,"identificacion":"9099905522","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":3,"contrasena":"25009","estado":1,"persona":{"id":3,"nombre":"Persona Test 25009","genero":"M","edad":25,"identificacion":"3324417794","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":4,"contrasena":"4321","estado":1,"persona":{"id":4,"nombre":"Persona Test Actualizado","genero":"M","edad":25,"identificacion":"1913401890101","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":5,"contrasena":"40056","estado":1,"persona":{"id":5,"nombre":"Persona Test 40056","genero":"M","edad":25,"identificacion":"3701421575","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":6,"contrasena":"42373","estado":1,"persona":{"id":6,"nombre":"Persona Test 42373","genero":"M","edad":25,"identificacion":"6919607222","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":7,"contrasena":"68159","estado":1,"persona":{"id":7,"nombre":"Persona Test 68159","genero":"M","edad":25,"identificacion":"4685511191","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":8,"contrasena":"23798","estado":1,"persona":{"id":9,"nombre":"Persona Test 23798","genero":"M","edad":25,"identificacion":"5906322547","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":9,"contrasena":"22413","estado":1,"persona":{"id":8,"nombre":"Persona Test 22413","genero":"M","edad":25,"identificacion":"3449601915","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":10,"contrasena":"22078","estado":1,"persona":{"id":10,"nombre":"Persona Test 22078","genero":"M","edad":25,"identificacion":"2263437970","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":11,"contrasena":"64300","estado":1,"persona":{"id":12,"nombre":"Persona Test 64300","genero":"M","edad":25,"identificacion":"1476594016","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":13,"contrasena":"90781","estado":1,"persona":{"id":11,"nombre":"Persona Test 90781","genero":"M","edad":25,"identificacion":"1111633564","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":14,"contrasena":"4321","estado":1,"persona":{"id":14,"nombre":"Persona Test Actualizado","genero":"M","edad":25,"identificacion":"1913401890101","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":15,"contrasena":"85333","estado":1,"persona":{"id":15,"nombre":"Persona Test 85333","genero":"M","edad":25,"identificacion":"8352160540","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":16,"contrasena":"17431","estado":1,"persona":{"id":16,"nombre":"Persona Test 17431","genero":"M","edad":25,"identificacion":"5197689718","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":17,"contrasena":"94318","estado":1,"persona":{"id":17,"nombre":"Persona Test 94318","genero":"M","edad":25,"identificacion":"4952520390","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":18,"contrasena":"28808","estado":1,"persona":{"id":19,"nombre":"Persona Test 28808","genero":"M","edad":25,"identificacion":"2005267061","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":19,"contrasena":"71560","estado":1,"persona":{"id":18,"nombre":"Persona Test 71560","genero":"M","edad":25,"identificacion":"4275770837","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":21,"contrasena":"4321","estado":1,"persona":{"id":21,"nombre":"Persona Test Actualizado","genero":"M","edad":25,"identificacion":"1913401890101","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":22,"contrasena":"93267","estado":1,"persona":{"id":22,"nombre":"Persona Test 93267","genero":"M","edad":25,"identificacion":"7176217874","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":23,"contrasena":"12948","estado":1,"persona":{"id":23,"nombre":"Persona Test 12948","genero":"M","edad":25,"identificacion":"7513158432","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":24,"contrasena":"25109","estado":1,"persona":{"id":24,"nombre":"Persona Test 25109","genero":"M","edad":25,"identificacion":"4030723229","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":25,"contrasena":"14994","estado":1,"persona":{"id":26,"nombre":"Persona Test 14994","genero":"M","edad":25,"identificacion":"3402274809","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":26,"contrasena":"96962","estado":1,"persona":{"id":27,"nombre":"Persona Test 96962","genero":"M","edad":25,"identificacion":"7905078692","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":28,"contrasena":"4321","estado":1,"persona":{"id":28,"nombre":"Persona Test Actualizado","genero":"M","edad":25,"identificacion":"1913401890101","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":29,"contrasena":"16069","estado":1,"persona":{"id":29,"nombre":"Persona Test 16069","genero":"M","edad":25,"identificacion":"2032179392","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":30,"contrasena":"21925","estado":1,"persona":{"id":30,"nombre":"Persona Test 21925","genero":"M","edad":25,"identificacion":"4419931662","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":31,"contrasena":"19141","estado":1,"persona":{"id":31,"nombre":"Persona Test 19141","genero":"M","edad":25,"identificacion":"7262543795","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":32,"contrasena":"44856","estado":1,"persona":{"id":32,"nombre":"Persona Test 44856","genero":"M","edad":25,"identificacion":"5030503761","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":33,"contrasena":"50044","estado":1,"persona":{"id":33,"nombre":"Persona Test 50044","genero":"M","edad":25,"identificacion":"4790964658","direccion":"Otavalo sn y principal","telefono":"098254785"}},{"id":34,"contrasena":"18692","estado":1,"persona":{"id":34,"nombre":"Persona Test 18692","genero":"M","edad":25,"identificacion":"9456698883","direccion":"Otavalo sn y principal","telefono":"098254785"}}]
+
+02:35:00.222 [pool-2-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callonce: read('classpath:microservicios/clientes/create-cliente.feature')
+02:35:00.226 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/cuentas
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 121
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"numeroCuenta":"7081823542","tipoCuenta":"CORRIENTE","saldoInicial":100,"saldoDisponible":100,"estado":1,"clienteId":37}
+
+02:35:00.231 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/clientes
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 188
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"contrasena":"66188","estado":1,"persona":{"nombre":"Persona Test 66188","genero":"M","edad":25,"identificacion":"7003579425","direccion":"Otavalo sn y principal","telefono":"098254785"}}
+
+02:35:00.264 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 33
+1 < 201
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 13 Jun 2025 08:35:00 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":38,"contrasena":"66188","estado":1,"persona":{"id":38,"nombre":"Persona Test 66188","genero":"M","edad":25,"identificacion":"7003579425","direccion":"Otavalo sn y principal","telefono":"098254785"}}
+
+02:35:00.266 [pool-2-thread-1] INFO  com.intuit.karate - [print] data:  {
+  "clienteId": 38,
+  "nombre": "Persona Test 66188",
+  "contrasena": "66188"
+}
+ 
+02:35:00.267 [pool-2-thread-1] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:microservicios/clientes/create-cliente.feature')
+02:35:00.274 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/cuentas
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 121
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"numeroCuenta":"3508596225","tipoCuenta":"CORRIENTE","saldoInicial":100,"saldoDisponible":100,"estado":1,"clienteId":38}
+
+02:35:00.322 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 95
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 13 Jun 2025 08:35:00 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":12,"numeroCuenta":"7081823542","tipoCuenta":"CORRIENTE","saldoInicial":100.0,"saldoDisponible":100.0,"estado":true,"clienteId":37,"movimientos":null}
+
+02:35:00.324 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 120
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 13 Jun 2025 08:35:00 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":11,"numeroCuenta":"9725223996","tipoCuenta":"CORRIENTE","saldoInicial":100.0,"saldoDisponible":100.0,"estado":true,"clienteId":36,"movimientos":null}
+
+02:35:00.326 [pool-2-thread-4] INFO  com.intuit.karate - [print] dataCuenta:  {
+  "cuentaId": 12,
+  "cuenta": "7081823542",
+  "saldoInicial": 100.0
+}
+ 
+02:35:00.327 [pool-2-thread-5] INFO  com.intuit.karate - [print] dataCuenta:  {
+  "cuentaId": 11,
+  "cuenta": "9725223996",
+  "saldoInicial": 100.0
+}
+ 
+02:35:00.327 [pool-2-thread-4] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:microservicios/cuentas/create-cuenta.feature')
+02:35:00.327 [pool-2-thread-2] WARN  com.intuit.karate - this thread waited 149 milliseconds for callonce lock: read('classpath:microservicios/cuentas/create-cuenta.feature')
+02:35:00.328 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8081/cuentas
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+02:35:00.328 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8081/cuentas/12
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+02:35:00.332 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 58
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 13 Jun 2025 08:35:00 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":13,"numeroCuenta":"3508596225","tipoCuenta":"CORRIENTE","saldoInicial":100.0,"saldoDisponible":100.0,"estado":true,"clienteId":38,"movimientos":null}
+
+02:35:00.334 [pool-2-thread-1] INFO  com.intuit.karate - [print] dataCuenta:  {
+  "cuentaId": 13,
+  "cuenta": "3508596225",
+  "saldoInicial": 100.0
+}
+ 
+02:35:00.335 [pool-2-thread-1] INFO  com.intuit.karate - << lock released, cached callonce: read('classpath:microservicios/cuentas/create-cuenta.feature')
+02:35:00.337 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/movimientos
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 39
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/24.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"noCuenta":"3508596225","monto":"119"}
+
+02:35:00.346 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 17
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 13 Jun 2025 08:35:00 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":12,"numeroCuenta":"7081823542","tipoCuenta":"CORRIENTE","saldoInicial":100.0,"saldoDisponible":100.0,"estado":true,"clienteId":37,"movimientos":[]}
+
+02:35:00.360 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 22
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 13 Jun 2025 08:35:00 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":10,"fecha":"2025-06-13T08:35:00.345291","tipoMovimiento":"DEPOSITO","valor":119.0,"saldo":219.0}
+
+02:35:00.369 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 40
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Fri, 13 Jun 2025 08:35:00 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+[{"id":1,"numeroCuenta":"9999881282","tipoCuenta":"CORRIENTE","saldoInicial":100.0,"saldoDisponible":100.0,"estado":true,"clienteId":1,"movimientos":[]},{"id":2,"numeroCuenta":"2660066033","tipoCuenta":"CORRIENTE","saldoInicial":100.0,"saldoDisponible":100.0,"estado":true,"clienteId":15,"movimientos":[]},{"id":3,"numeroCuenta":"9217161550","tipoCuenta":"CORRIENTE","saldoInicial":100.0,"saldoDisponible":100.0,"estado":true,"clienteId":16,"movimientos":[]},{"id":4,"numeroCuenta":"1335240393","tipoCuenta":"CORRIENTE","saldoInicial":100.0,"saldoDisponible":359.0,"estado":true,"clienteId":17,"movimientos":[{"id":1,"fecha":"2025-06-13T08:29:35.299291","tipoMovimiento":"DEPOSITO","valor":109.0,"saldo":209.0},{"id":4,"fecha":"2025-06-13T08:30:37.304242","tipoMovimiento":"DEPOSITO","valor":150.0,"saldo":359.0}]},{"id":5,"numeroCuenta":"7663287488","tipoCuenta":"CORRIENTE","saldoInicial":100.0,"saldoDisponible":100.0,"estado":true,"clienteId":23,"movimientos":[]},{"id":6,"numeroCuenta":"7913591312","tipoCuenta":"CORRIENTE","saldoInicial":100.0,"saldoDisponible":100.0,"estado":true,"clienteId":22,"movimientos":[]},{"id":7,"numeroCuenta":"3347758041","tipoCuenta":"CORRIENTE","saldoInicial":100.0,"saldoDisponible":1027.0,"estado":true,"clienteId":24,"movimientos":[{"id":5,"fecha":"2025-06-13T08:30:53.65025","tipoMovimiento":"DEPOSITO","valor":903.0,"saldo":1003.0},{"id":7,"fecha":"2025-06-13T08:30:53.659769","tipoMovimiento":"DEPOSITO","valor":927.0,"saldo":1027.0}]},{"id":8,"numeroCuenta":"8528898191","tipoCuenta":"CORRIENTE","saldoInicial":100.0,"saldoDisponible":100.0,"estado":true,"clienteId":29,"movimientos":[]},{"id":9,"numeroCuenta":"6575287062","tipoCuenta":"CORRIENTE","saldoInicial":100.0,"saldoDisponible":100.0,"estado":true,"clienteId":30,"movimientos":[]},{"id":10,"numeroCuenta":"1985179895","tipoCuenta":"CORRIENTE","saldoInicial":100.0,"saldoDisponible":935.0,"estado":true,"clienteId":31,"movimientos":[{"id":8,"fecha":"2025-06-13T08:33:06.681352","tipoMovimiento":"DEPOSITO","valor":835.0,"saldo":935.0}]},{"id":11,"numeroCuenta":"9725223996","tipoCuenta":"CORRIENTE","saldoInicial":100.0,"saldoDisponible":100.0,"estado":true,"clienteId":36,"movimientos":[]},{"id":12,"numeroCuenta":"7081823542","tipoCuenta":"CORRIENTE","saldoInicial":100.0,"saldoDisponible":100.0,"estado":true,"clienteId":37,"movimientos":[]},{"id":13,"numeroCuenta":"3508596225","tipoCuenta":"CORRIENTE","saldoInicial":100.0,"saldoDisponible":100.0,"estado":true,"clienteId":38,"movimientos":[{"id":10,"fecha":"2025-06-13T08:35:00.345291","tipoMovimiento":"DEPOSITO","valor":119.0,"saldo":219.0}]}]
+
+02:35:00.528 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 7 (6 remaining) classpath:microservicios/clientes/create-cliente.feature
+02:35:00.615 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 7 (5 remaining) classpath:microservicios/clientes/delete-cliente.feature
+02:35:00.668 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 7 (4 remaining) classpath:microservicios/clientes/read-cliente.feature
+02:35:00.713 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 4 of 7 (3 remaining) classpath:microservicios/clientes/update-cliente.feature
+02:35:00.775 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 5 of 7 (2 remaining) classpath:microservicios/cuentas/create-cuenta.feature
+02:35:00.822 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 6 of 7 (1 remaining) classpath:microservicios/cuentas/read-cuenta.feature
+02:35:00.877 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 7 of 7 (0 remaining) classpath:microservicios/movimientos/movimientos.feature
